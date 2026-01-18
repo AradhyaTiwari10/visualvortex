@@ -1,35 +1,78 @@
+import { useColorScheme } from '@/hooks/use-color-scheme';
+import { Ionicons } from '@expo/vector-icons';
 import { Tabs } from 'expo-router';
 import React from 'react';
 
-import { HapticTab } from '@/components/haptic-tab';
-import { IconSymbol } from '@/components/ui/icon-symbol';
-import { Colors } from '@/constants/theme';
-import { useColorScheme } from '@/hooks/use-color-scheme';
-
 export default function TabLayout() {
   const colorScheme = useColorScheme();
+  const activeColor = '#2fb979';
+  const inactiveColor = '#94a3b8';
 
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
+        tabBarActiveTintColor: activeColor,
+        tabBarInactiveTintColor: inactiveColor,
         headerShown: false,
-        tabBarButton: HapticTab,
+        tabBarStyle: {
+          backgroundColor: '#ffffff',
+          borderTopWidth: 1,
+          borderTopColor: '#f1f5f9',
+          height: 85,
+          paddingBottom: 30,
+          paddingTop: 8,
+          position: 'absolute',
+        },
+        tabBarLabelStyle: {
+          fontSize: 11,
+          fontWeight: '700',
+          marginTop: -4,
+        },
+        tabBarIconStyle: {
+          marginTop: 4,
+        },
       }}>
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Home',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
+          title: 'Discover',
+          tabBarIcon: ({ color }) => <Ionicons size={26} name="compass" color={color} />,
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="my-events"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          title: 'My Events',
+          tabBarIcon: ({ color }) => <Ionicons size={26} name="calendar" color={color} />,
+          tabBarLabelStyle: {
+            fontSize: 10,
+            fontWeight: '700',
+            marginTop: 4,
+          },
+        }}
+      />
+      <Tabs.Screen
+        name="map"
+        options={{
+          title: 'Map',
+          tabBarIcon: ({ color }) => <Ionicons size={26} name="map" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="alerts"
+        options={{
+          title: 'Alerts',
+          tabBarIcon: ({ color }) => <Ionicons size={26} name="notifications" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="profile"
+        options={{
+          title: 'Profile',
+          tabBarIcon: ({ color }) => <Ionicons size={26} name="person" color={color} />,
         }}
       />
     </Tabs>
   );
 }
+
