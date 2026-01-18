@@ -73,7 +73,7 @@ export default function LoginScreen() {
 
                         <TouchableOpacity
                             style={styles.guestButton}
-                            onPress={() => router.replace('/(tabs)')}
+                            onPress={() => router.replace('/(tabs)/discover')}
                         >
                             <Text style={styles.guestButtonText}>Explore as Guest</Text>
                         </TouchableOpacity>

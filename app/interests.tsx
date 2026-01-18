@@ -71,7 +71,7 @@ export default function InterestsScreen() {
             </ScrollView>
 
             <View style={styles.footer}>
-                <TouchableOpacity style={styles.getStartedButton} onPress={() => router.replace('/(tabs)')}>
+                <TouchableOpacity style={styles.getStartedButton} onPress={() => router.replace('/(tabs)/discover')}>
                     <Text style={styles.getStartedText}>Get Started</Text>
                     <Ionicons name="arrow-forward" size={20} color="#ffffff" />
                 </TouchableOpacity>

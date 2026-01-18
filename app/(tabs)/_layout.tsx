@@ -33,7 +33,7 @@ export default function TabLayout() {
         },
       }}>
       <Tabs.Screen
-        name="index"
+        name="discover"
         options={{
           title: 'Discover',
           tabBarIcon: ({ color }) => <Ionicons size={26} name="compass" color={color} />,
