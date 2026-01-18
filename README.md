@@ -1,50 +1,89 @@
-# Welcome to your Expo app 👋
+# UniVerse — Campus Event Intelligence Platform
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+UniVerse is a gamified event discovery and intelligence platform designed specifically for campus life. It helps students navigate overwhelming schedules, prioritize high-impact opportunities, and visualize their social and academic growth through a premium, interactive interface.
 
-## Get started
+## 🚀 The Problem We're Solving
 
-1. Install dependencies
+Campus life is filled with hundreds of events — from tech workshops and sports trials to cultural fests and networking circles. Students often face three major challenges:
+1. **The Choice Paralysis**: Too many events happening at the same time.
+2. **Hidden Impact**: Not knowing which event actually contributes to their personal development or "Aura."
+3. **Logistical Friction**: Hard-to-navigate maps and boring, static schedules.
 
-   ```bash
-   npm install
-   ```
+**UniVerse solves this by introducing "Event Intelligence."**
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## ✨ Key Features
 
-In the output, you'll find options to open the app in a
+### 1. Unified Event Feed with "Regret Score"
+Every event is assigned an **Impact Score (Regret Score)**. This metric tells you how much you'd "regret" missing an event based on its rarity, popularity, and alignment with your interests.
+- **Availability Real-time**: See exactly how many slots are left (e.g., "Only 12 slots remaining!").
+- **Dynamic Goals**: Events are tagged with goals like "Leadership," "Skill Growth," or "Social Networking."
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### 2. "Tough Choice" Clash Assistant
+When two events overlap, UniVerse doesn't just show a warning — it helps you decide.
+- **AI-Powered Comparison**: Compares clashing events side-by-side.
+- **Decision Engine**: Highlighting the "Higher Impact" event to help you commit without FOMO.
+- **Automatic Handling**: When you switch events, the assistant automatically moves the other to your "Interested" list for later.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### 3. Spatial Campus Map (Architectural View)
+Forget boring satellite maps. UniVerse features a hand-drawn **architectural schematic** of the campus.
+- **Building Landmarks**: Resident halls, Academic blocks, and Sports arenas are clearly defined.
+- **Live Event Pins**: See where events are happening in real-time relative to your location.
 
-## Get a fresh project
+### 4. Vertical Gamified Roadmap
+Every event commitment is a journey. Our **Vertical Roadmap** makes progression feel like leveling up in a game.
+- **Unit Progress**: Track your completion rate for different event "Units."
+- **Milestone Nodes**: Earn Aura points (Flash), unlock Rewards (Gift), and clear activities (Checkmark).
+- **Zone Chapters**: The journey is divided into logical zones like the "Social Quad" or "Academic Tier."
 
-When you're ready, run:
+### 5. The Aura Ecosystem
+Your profile isn't just a bio — it's your **Campus Impact Identity**.
+- **Aura Points**: Rewarding Consistency, Diversity, and Follow-through.
+- **Streaks & Badges**: Earn "Early Bird" or "Tech Guru" badges for your engagement patterns.
+- **Leaderboards**: See how your "Aura" ranks against your peers across the campus.
 
+---
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Expo](https://expo.dev/) (React Native)
+- **Navigation**: [Expo Router](https://docs.expo.dev/router/introduction/) (File-based routing)
+- **Animations**: [React Native Reanimated](https://docs.swmansion.com/react-native-reanimated/)
+- **Icons**: Lucide & Ionicons
+- **Language**: TypeScript
+
+---
+
+## 🏁 Getting Started
+
+### 1. Clone the repository
 ```bash
-npm run reset-project
+git clone https://github.com/AradhyaTiwari10/visualvortex.git
+cd visualvortex
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 2. Install dependencies
+```bash
+npm install
+```
 
-## Learn more
+### 3. Start the application
+```bash
+npx expo start
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+### 4. Run on your device
+Scan the QR code with the **Expo Go** app (Android) or **Camera app** (iOS) to see the experience live!
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+---
 
-## Join the community
+## 🎨 Design Philosophy
+UniVerse uses a **"Forest Green + Soft Pastel"** aesthetic. We prioritize:
+- **Large Rounded UI Components** (20px-32px radius) for a premium, friendly feel.
+- **Vibrant Micro-animations** for every button press and state transition.
+- **Glassmorphic Overlays** for map and detail views.
 
-Join our community of developers creating universal apps.
+---
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Created with ❤️ for the student community.
