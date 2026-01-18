@@ -1,4 +1,5 @@
 import { Ionicons } from '@expo/vector-icons';
+import { router } from 'expo-router';
 import React from 'react';
 import {
     Image,
@@ -227,7 +228,7 @@ export default function ProfileScreen() {
                 {/* LOGOUT / SETTINGS */}
                 <View style={styles.footer}>
                     <Text style={styles.footerLabel}>ACCOUNT SETTINGS</Text>
-                    <TouchableOpacity style={styles.logoutButton}>
+                    <TouchableOpacity style={styles.logoutButton} onPress={() => router.replace('/')}>
                         <Ionicons name="log-out" size={20} color="#ef4444" />
                         <Text style={styles.logoutText}>Log Out from Campus ID</Text>
                     </TouchableOpacity>
